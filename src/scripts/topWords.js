@@ -1,5 +1,5 @@
 const [, , string] = process.argv;
-const { formattedString, makeLowercase } = require("../utils/topWords.js");
+const { formatString, makeLowercase } = require("../utils/topWords.js");
 
 module.exports.run = (string) => {
   try {

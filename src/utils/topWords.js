@@ -1,5 +1,5 @@
 module.exports.formatString = (string) => {
-  const regexPattern = /[\W_]+/g;
+  const regexPattern = /[^0-9A-Za-z']/g;
   const cleanedString = string.replace(regexPattern, " ");
   return cleanedString;
 };
