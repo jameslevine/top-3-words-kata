@@ -8,7 +8,6 @@ module.exports.formatString = (string) => {
 const isWordAlreadyCounted = (wordFrequencies, word) => {
   const isWordAlreadyCounted =
     wordFrequencies.filter((x) => x.name === word).length > 0;
-  console.log(isWordAlreadyCounted);
   return isWordAlreadyCounted;
 };
 
@@ -21,7 +20,7 @@ const addOneToFrequencyCount = (wordFrequencies, word) => {
 };
 
 const sortArrayByCount = (wordFrequencies) => {
-  const sortedArray = wordFrequencies.sort(function (a, b) {
+  const sortedArray = wordFrequencies.sort((a, b) => {
     return b.count - a.count;
   });
   return sortedArray;
