@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1610921066558" clover="3.2.0">
-  <project timestamp="1610921066559" name="All files">
-    <metrics statements="50" coveredstatements="48" conditionals="9" coveredconditionals="7" methods="13" coveredmethods="13" elements="72" coveredelements="68" complexity="0" loc="50" ncloc="50" packages="2" files="2" classes="2"/>
+<coverage generated="1610921951231" clover="3.2.0">
+  <project timestamp="1610921951231" name="All files">
+    <metrics statements="52" coveredstatements="50" conditionals="9" coveredconditionals="7" methods="13" coveredmethods="13" elements="74" coveredelements="70" complexity="0" loc="52" ncloc="52" packages="2" files="2" classes="2"/>
     <package name="scripts">
       <metrics statements="18" coveredstatements="16" conditionals="7" coveredconditionals="5" methods="1" coveredmethods="1"/>
       <file name="topWords.js" path="/Users/james/Coding/tech-tests/top_3_words_kata/src/scripts/topWords.js">
@@ -27,9 +27,9 @@
       </file>
     </package>
     <package name="utils">
-      <metrics statements="32" coveredstatements="32" conditionals="2" coveredconditionals="2" methods="12" coveredmethods="12"/>
+      <metrics statements="34" coveredstatements="34" conditionals="2" coveredconditionals="2" methods="12" coveredmethods="12"/>
       <file name="topWords.js" path="/Users/james/Coding/tech-tests/top_3_words_kata/src/utils/topWords.js">
-        <metrics statements="32" coveredstatements="32" conditionals="2" coveredconditionals="2" methods="12" coveredmethods="12"/>
+        <metrics statements="34" coveredstatements="34" conditionals="2" coveredconditionals="2" methods="12" coveredmethods="12"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="6" type="stmt"/>
         <line num="3" count="6" type="stmt"/>
@@ -58,10 +58,12 @@
         <line num="44" count="6" type="stmt"/>
         <line num="45" count="6" type="stmt"/>
         <line num="48" count="2" type="stmt"/>
-        <line num="49" count="5" type="stmt"/>
-        <line num="50" count="5" type="stmt"/>
-        <line num="51" count="13" type="stmt"/>
-        <line num="52" count="5" type="stmt"/>
+        <line num="49" count="6" type="stmt"/>
+        <line num="50" count="6" type="stmt"/>
+        <line num="51" count="6" type="stmt"/>
+        <line num="52" count="16" type="stmt"/>
+        <line num="53" count="6" type="stmt"/>
+        <line num="54" count="6" type="stmt"/>
       </file>
     </package>
   </project>
