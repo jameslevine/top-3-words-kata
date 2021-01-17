@@ -11,11 +11,11 @@ const isWordAlreadyCounted = (wordFrequencies, word) => {
   return isWordAlreadyCounted;
 };
 
-const addOneToFrequencyCount = (wordFrequencies, word) => {
+const addToFrequencyCount = (wordFrequencies, word, incrementValue) => {
   return wordFrequencies
     .filter((x) => x.name === word)
     .map((x) => {
-      return (x.count += 1);
+      return (x.count += incrementValue);
     });
 };
 
@@ -31,7 +31,7 @@ module.exports.calculateWordFrequencies = (string) => {
   let wordFrequencies = [];
   splitString.map((word) => {
     if (isWordAlreadyCounted(wordFrequencies, word)) {
-      addOneToFrequencyCount(wordFrequencies, word);
+      addToFrequencyCount(wordFrequencies, word, 1);
     } else {
       wordFrequencies.push({ name: word, count: 1 });
     }
