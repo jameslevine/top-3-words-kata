@@ -1,11 +1,17 @@
-const [, , string] = process.argv;
-const { formatString, makeLowercase } = require("../utils/topWords.js");
+const [, , sentence, numberOfWords] = process.argv;
+const {
+  formatString,
+  findTopWords,
+  calculateWordFrequencies,
+} = require("../utils/topWords.js");
 
-module.exports.run = (string) => {
+module.exports.run = (sentence, numberOfWords) => {
   try {
-    const formattedString = formatString(string);
-    const lowercaseString = makeLowercase(formattedString);
-    console.log(lowercaseString);
+    const formattedString = formatString(sentence);
+    const wordCounts = calculateWordFrequencies(formattedString);
+    const topWords = findTopWords(wordCounts, numberOfWords);
+    console.log(topWords);
+    return topWords;
   } catch (error) {
     console.log(error);
   }
@@ -15,5 +21,5 @@ if (require.main == "module") {
   console.log("required as a module");
 } else {
   console.log("called directly");
-  this.run(string);
+  this.run(sentence, numberOfWords);
 }

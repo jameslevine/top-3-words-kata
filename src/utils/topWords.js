@@ -1,10 +1,46 @@
 module.exports.formatString = (string) => {
   const regexPattern = /[^0-9A-Za-z']/g;
   const cleanedString = string.replace(regexPattern, " ");
-  return cleanedString;
+  const lowercaseString = cleanedString.toLowerCase();
+  return lowercaseString;
 };
 
-module.exports.makeLowercase = (string) => {
-  const lowercaseString = string.toLowerCase();
-  return lowercaseString;
+const isWordAlreadyCounted = (wordFrequencies, word) => {
+  const isWordAlreadyCounted =
+    wordFrequencies.filter((x) => x.name === word).length > 0;
+  console.log(isWordAlreadyCounted);
+  return isWordAlreadyCounted;
+};
+
+const addOneToFrequencyCount = (wordFrequencies, word) => {
+  return wordFrequencies
+    .filter((x) => x.name === word)
+    .map((x) => {
+      return (x.count += 1);
+    });
+};
+
+const sortArrayByCount = (wordFrequencies) => {
+  const sortedArray = wordFrequencies.sort(function (a, b) {
+    return b.count - a.count;
+  });
+  return sortedArray;
+};
+
+module.exports.calculateWordFrequencies = (string) => {
+  const splitString = string.split(" ");
+  let wordFrequencies = [];
+  splitString.map((word) => {
+    if (isWordAlreadyCounted(wordFrequencies, word)) {
+      addOneToFrequencyCount(wordFrequencies, word);
+    } else {
+      wordFrequencies.push({ name: word, count: 1 });
+    }
+  });
+  const sortedFrequencies = sortArrayByCount(wordFrequencies);
+  return sortedFrequencies;
+};
+
+module.exports.findTopWords = (wordCounts, numberOfWords) => {
+  return wordCounts.slice(0, numberOfWords);
 };
