@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1610921066558" clover="3.2.0">
+  <project timestamp="1610921066559" name="All files">
+    <metrics statements="50" coveredstatements="48" conditionals="9" coveredconditionals="7" methods="13" coveredmethods="13" elements="72" coveredelements="68" complexity="0" loc="50" ncloc="50" packages="2" files="2" classes="2"/>
+    <package name="scripts">
+      <metrics statements="18" coveredstatements="16" conditionals="7" coveredconditionals="5" methods="1" coveredmethods="1"/>
+      <file name="topWords.js" path="/Users/james/Coding/tech-tests/top_3_words_kata/src/scripts/topWords.js">
+        <metrics statements="18" coveredstatements="16" conditionals="7" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="15" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="28" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="32" coveredstatements="32" conditionals="2" coveredconditionals="2" methods="12" coveredmethods="12"/>
+      <file name="topWords.js" path="/Users/james/Coding/tech-tests/top_3_words_kata/src/utils/topWords.js">
+        <metrics statements="32" coveredstatements="32" conditionals="2" coveredconditionals="2" methods="12" coveredmethods="12"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="5113" type="stmt"/>
+        <line num="16" count="197" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="59" type="stmt"/>
+        <line num="21" count="1309" type="stmt"/>
+        <line num="23" count="59" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="29" count="530" type="stmt"/>
+        <line num="31" count="6" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="35" count="6" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="37" count="6" type="stmt"/>
+        <line num="38" count="197" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="59" type="stmt"/>
+        <line num="41" count="138" type="stmt"/>
+        <line num="44" count="6" type="stmt"/>
+        <line num="45" count="6" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="49" count="5" type="stmt"/>
+        <line num="50" count="5" type="stmt"/>
+        <line num="51" count="13" type="stmt"/>
+        <line num="52" count="5" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

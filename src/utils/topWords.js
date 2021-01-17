@@ -1,7 +1,12 @@
 module.exports.formatString = (string) => {
-  const regexPattern = /[^0-9A-Za-z']/g;
-  const cleanedString = string.replace(regexPattern, " ");
-  const lowercaseString = cleanedString.toLowerCase();
+  const matchPunctuationPattern = /[.,\/#!$%\^&\*;:{}=\-_`~()]/g;
+  const matchExtraWhitespacePattern = /\s{2,}/g;
+  const removedPunctuationString = string.replace(matchPunctuationPattern, "");
+  const removedExtraWhiteSpaceString = removedPunctuationString.replace(
+    matchExtraWhitespacePattern,
+    " "
+  );
+  const lowercaseString = removedExtraWhiteSpaceString.toLowerCase();
   return lowercaseString;
 };
 
@@ -41,5 +46,8 @@ module.exports.calculateWordFrequencies = (string) => {
 };
 
 module.exports.findTopWords = (wordCounts, numberOfWords) => {
-  return wordCounts.slice(0, numberOfWords);
+  const topWordsSlice = wordCounts.slice(0, numberOfWords);
+  console.table(topWordsSlice);
+  const topWordsNames = topWordsSlice.map((x) => x.name);
+  return topWordsNames;
 };
